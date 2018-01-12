@@ -1,0 +1,112 @@
+body {
+  background-color: white;
+  color: #2d2d2d;
+  max-width: 1240px;
+  min-width: 150px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 150px;
+}
+
+.cart {
+  width: 50px;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #e2574c;
+}
+
+#navigation ul {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#navigation li {
+  display: flex;
+  /* width: 100%;
+  justify-content: space-between; */
+}
+
+#banner{
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.container {
+  background: 
+    url("images/banner-girl.png"),
+    url("images/flower-bkgd.jpg");
+  background-size: 12%, 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.container p {
+  padding-top: 70px;
+}
+
+
+.catagories {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  color: white;
+  height: 100px;
+  width: 150px;
+  margin: 2px;
+}
+
+.item:nth-child(n) {
+  background-color: Crimson;
+  flex-grow: 1.1;
+}
+.item:nth-child(2n) {
+  background-color: RoyalBlue;
+  flex-grow: 0;
+}
+.item:nth-child(3n) {
+  background-color: DarkCyan;
+  flex-grow: 0;
+}
+.item:nth-child(4n) {
+  background-color: Chocolate;
+  flex-grow: 0;
+}
+.item:nth-child(5n) {
+  background-color: rgb(77, 102, 102);
+  flex-grow: 0;
+}
+.item:nth-child(6n) {
+  background-color: rgb(129, 62, 62);
+  flex-grow: 1.1;
+}
+
+
+@media screen and (min-width: 480px){
+  
+}
+
+@media screen and (min-width: 600px){
+  
+}
