@@ -45,3 +45,41 @@ $('a:link').on('click', function () {
   $(this).css('border', '1px dotted');
   $(this).parent().siblings().find('a').css('border', '0px dotted');
 });
+
+
+
+$('button').click(function (e) {
+  var sEmail = $('.email').val();
+
+  //check if empty input
+  if ($.trim(sEmail).length == 0 ) {
+    alert('Please submit a valid email address.');
+    e.preventDefault();
+  }
+
+  if (validateEmail(sEmail)) {
+    alert('Thanks for subscribing!');
+    e.preventDefault();
+  }
+
+  // else{
+  //   e.preventDefault();
+  // }
+
+});
+
+
+function validateEmail(sEmail) {
+  var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+  if (filter.test(sEmail)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// $("div").on("click", "button", function(event) {
+//   // Stop the default behavior on the button click
+//   event.preventDefault();
+//   // Now perform our custom button click actions here...
+// });
