@@ -204,7 +204,8 @@ a.item1:link, a.item1:visited{
   margin-bottom: 50px;
 }
 
-#products .carousel-cell h1, p{
+#products .carousel-cell h1, .carousel-cell p{
+  color: #969696;
   margin: 0;
   padding: 0;
 }
