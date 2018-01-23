@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -22,13 +23,17 @@
 
     <ul>
       <li>
-        <a href="#">about</a>
+        <a href="#slogon">about</a>
       </li>
       <li>
-        <a href="#">shop</a>
+        <a href="#flexbox">shop</a>
       </li>
-      <li>featured</li>
-      <li>updates</li>
+      <li>
+        <a href="#products">featured</a>
+      </li>
+      <li>
+        <a href="#sign-up">updates</a>
+      </li>
     </ul>
 
     <div class="cart">
@@ -70,12 +75,12 @@
 
     <div class="catagories">
       <!-- flex box -->
-      <div class="item">men's</div>
-      <div class="item">sale</div>
-      <div class="item">bags</div>
-      <div class="item">trends</div>
-      <div class="item">glass</div>
-      <div class="item">women's</div>
+      <div class="item"><a class="item1" href="#">men's</a></div>
+      <div class="item"><a class="item1" href="#">trends</a></div>
+      <div class="item"><a class="item1" href="#">glasses</a></div>
+      <div class="item"><a class="item1" href="#">sale</a></div>
+      <div class="item"><a class="item1" href="#">bags</a></div>
+      <div class="item"><a class="item1" href="#">women's</a></div>
 
     </div>
 
@@ -93,33 +98,45 @@
     <div class="carousel">
       <div class="carousel-cell">
         <img src="images/checked-stretch-dress.jpg">
-        <p>dress</p>
+        <p class="icatagorie">dress</p>
         <h1>stretch dress</h1>
         <p>$199</p>
       </div>
       <div class="carousel-cell">
         <img src="images/cotton-blue-shirt.jpg">
-        <p>blue shirt</p>
+        <p class="icatagorie">shirt</p>
+        <h1>bule shirt</h1>
+        <p>$199</p>
       </div>
       <div class="carousel-cell">
         <img src="images/cotton-yellow-tshirt.jpg">
-        <p>yellow tshirt</p>
+        <p class="icatagorie">bag</p>
+        <h1>yellow tshirt</h1>
+        <p>$99</p>
       </div>
       <div class="carousel-cell">
         <img src="images/blue-hipster-backpack.jpg">
-        <p>hister backpack</p>
+        <p class="icatagorie">bag</p>
+        <h1>hipster backpack</h1>
+        <p>$99</p>
       </div>
       <div class="carousel-cell">
         <img src="images/blue-silk-dress.jpg">
-        <p>silk dress</p>
+        <p class="icatagorie">dress</p>
+        <h1>silk dress</h1>
+        <p>$99</p>
       </div>
       <div class="carousel-cell">
         <img src="images/pink-dotted-dress.jpg">
-        <p>dotted dress</p>
+        <p class="icatagorie">dress</p>
+        <h1>dotted dress</h1>
+        <p>$99</p>
       </div>
       <div class="carousel-cell">
         <img src="images/stretch-knit-dress.jpg">
-        <p>knit dress</p>
+        <p class="icatagorie">dress</p>
+        <h1>knit dress</h1>
+        <p>$99</p>
       </div>
     </div>
   </section>
@@ -133,57 +150,64 @@
         <span class="bold">Updates</span>
       </h1>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
-        our blog. Unsubscribe at any time.w
+        our blog. Unsubscribe at any time.
       </p>
+    
+
+      <div class="submitButton">
+        <form action="index.html">
+          <input class='email' type="email" placeholder="your e-mail">
+          <button class="sbutton" type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
 
-    <div class="submitButton">
-      <form action="index.html">
-        <input class='email' type="email" placeholder="your e-mail">
-        <button type="submit">Subscribe</button>
-      </form>
 
-    </div>
 
   </section>
 
   <section id="footer">
+    <div class="companyinfo">
     <p>©2016 Aloha Apparel Co.
       <br> Powerded by HTML and CSS.
       <br>
-      <br>604-604-6040.info@alohaapparel.com
+      <br>604-604-6040.
+      <a href="mailto:youremailaddress">info@alohaapparel.com</a> 
       <br>
-      <br> 1490 W Broadway
-      <br>Vancouver, BC, Canada</p>
+      <div class="adress">
+      <p><br>1490 W Broadway</p>
+      <p>Vancouver, BC, Canada</p>
+      </div>
+    </div>
 
     <div class="contact">
       <ul>
         <li>
-          <a href="#">
+          <a class="contactli" href="#">
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <span>facebook</span>
         </li>
         </a>
         <li>
-          <a href="#">
+          <a class="contactli" href="#">
             <i class="fa fa-twitter" aria-hidden="true"></i>
             <span>twitter</span>
         </li>
         </a>
         <li>
-          <a href="#">
+          <a class="contactli" href="#">
             <i class="fa fa-instagram" aria-hidden="true"></i>
             <span>instagrame</span>
         </li>
         </a>
         <li>
-          <a href="#">
+          <a class="contactli" href="#">
             <i class="fa fa-pinterest" aria-hidden="true"></i>
             <span>pinterest</span>
         </li>
         </a>
         <li>
-          <a href="#">
+          <a class="contactli" href="#">
             <i class="fa fa-google-plus" aria-hidden="true"></i>
             <span>google+</span>
         </li>

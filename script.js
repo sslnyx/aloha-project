@@ -48,7 +48,7 @@ $('a:link').on('click', function () {
 
 
 
-$('button').click(function (e) {
+$('.sbutton').click(function (e) {
   var sEmail = $('.email').val();
 
   //check if empty input
@@ -77,9 +77,3 @@ function validateEmail(sEmail) {
     return false;
   }
 }
-
-// $("div").on("click", "button", function(event) {
-//   // Stop the default behavior on the button click
-//   event.preventDefault();
-//   // Now perform our custom button click actions here...
-// });

@@ -1,9 +1,29 @@
-# Prject 1 README
+# Project Title
 
-description
+Red first Project 'ALOHA'
 
-## This is a H2
+## Code Example
 
-'this is code block'
+```
+sample code
+```
 
-> this is quote
+## Installation
+
+```
+sample code
+```
+
+## Tests
+
+```
+test sample code
+```
+
+## Contributors
+
+Ning Yu Luo @NinGTX
+
+## License
+
+open source

@@ -68,6 +68,7 @@ h1{
 }
 
 #slogon, .sign-up-content, #products h1{
+  font-size: 1.15rem;
   text-align: center;
   line-height: 2;
   padding: 2rem;
@@ -96,28 +97,37 @@ h1{
 
 
 .container p {
+  font-size: 1.15rem;
   text-transform: uppercase;
 }
 
 .container h1 {
+  margin-top: 15px;
+  font-size: 3rem;
+  font-weight: 200;
   text-transform: capitalize;
 }
 
 
 .item {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+a.item1:link, a.item1:visited{
+  color: white;
 }
 
 .catagories {
   display: grid;
-  grid-gap: 2px;
+  grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(200px, auto);
   /* margin-bottom: 2em; */
 }
 
@@ -196,7 +206,16 @@ h1{
 
 #products .carousel-cell h1, p{
   margin: 0;
-  padding:0;
+  padding: 0;
+}
+
+#products .carousel-cell h1{
+  color: #e2574c;
+  text-transform: capitalize;
+}
+
+#products .carousel-cell .icatagorie {
+  text-transform: uppercase;
 }
 
 
@@ -211,28 +230,38 @@ h1{
   background-position: bottom;
   background-repeat: no-repeat;
   margin-bottom: 8px;
+  min-height: 400px;
+  line-height: 400px
+}
+
+.sign-up-content{
+  text-shadow: 1px 1px 2px black;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
 
 .submitButton {
-  padding-bottom: 2rem;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 0;
+  /* align-items: center; */
 }
 
 form {
-  width: 50%;
-  max-width: 400px;
+  min-width: 250px;
+  width: 70%;
   position: relative;
+  
 }
 
 input{
   text-transform: capitalize;
-  height:50px;
+  height:40px;
   width:100%;
-  padding-left:10px;
+  padding-left:14px;
   border-radius: 25px;
   border:none;
   outline:none;
@@ -241,11 +270,11 @@ button{
   color: white;
   background-color: #f44336;
   position:absolute;
-  right: -6px;
+  right: -9px;
   top: 3px;
   border:none;
   width: 100px;
-  height:46px;
+  height:36px;
   border-radius:25px;
   outline:none;
   text-align:center;
@@ -265,19 +294,26 @@ button:hover{
   /* align-items: center; */
 }
 
+
 #footer p {
   text-align: center;
+}
+
+.adress {
+  color: #969696;
 }
 
 
 .contact ul{
   text-align: center;
   padding: 0;
+  padding-top: 14px;
 }
 
 .contact li{
   display: inline;
   padding: 1rem;
+  /* list-style: none; */
 }
 
 .contact span{
@@ -285,9 +321,9 @@ button:hover{
 }
 
 
-#footer li {
+/* #footer li {
   list-style: none;
-}
+} */
 
 
 @media screen and (min-width: 480px) {
@@ -314,6 +350,13 @@ button:hover{
     width: 300px;
     justify-content: space-between;
   }
+
+  /* .catagories {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50vmin);
+  } */
   
 
   .item:nth-child(1) {
@@ -349,6 +392,7 @@ button:hover{
   #footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   #footer p {
@@ -356,7 +400,9 @@ button:hover{
   }
 
   .contact ul{
+    margin: 0;
     text-align: left;
+    padding-top: 0;
   }
 
   i {
@@ -365,7 +411,7 @@ button:hover{
   
   .contact li{
     display: block;
-    padding:0;
+    padding: 5px;
   }
 
   .contact span{
@@ -373,12 +419,25 @@ button:hover{
   }
 }
 
+.companyinfo a:link{
+  color: white;
+  text-decoration: underline;
+}
+
+a.contactlis:link, a.contactli:visited{
+  color: white;
+}
+
+a.contactli:hover, a.contactli:active {
+  color: #b64036;
+}
+
 @media screen and (min-width: 600px) {
   .catagories {
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(250px, auto);
     margin-bottom: 2em;
   }
 }

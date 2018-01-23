@@ -93,7 +93,7 @@ html {
     font-size: 14px;
  }
 
- .container h1 {
+ .container h1, #footer p {
     font-family: 'Playfair Display', Arial, sans-serif;
 }
 
@@ -101,6 +101,7 @@ html {
 span {
     font-family: 'Playfair Display', Arial, sans-serif;
     text-transform: capitalize;
+    font-size: 2.4rem;
   }
 
 .italic {
@@ -112,10 +113,17 @@ span {
     font-weight: bold;
 }
 
+.contact span {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 14px;
+}
+
+
 @media screen and (min-width: 480px) {
 html {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
+    font-weight: 300;
  }
 
 }
