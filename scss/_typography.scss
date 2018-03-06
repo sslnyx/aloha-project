@@ -12,6 +12,7 @@ span {
   font-family: 'Playfair Display', Arial, sans-serif;
   text-transform: capitalize;
   font-size: 2.4rem;
+  font-weight: bold;
 }
 
 .italic {
@@ -19,28 +20,24 @@ span {
   font-style: italic;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .contact span {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 14px;
 }
 
-#products .carousel-cell p {
-  font-size: 0.8rem;
-}
-
-#products .carousel-cell h1 {
-  font-family: 'Playfair Display', Arial, sans-serif;
-  font-size: 1.5rem;
+#products .carousel-cell {
+  p {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 480px) {
   html {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
-    font-weight: 300;
   }
 }
