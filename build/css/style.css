@@ -354,7 +354,7 @@ form {
   position: relative; }
 
 input {
-  text-transform: capitalize;
+  position: relative;
   height: 40px;
   width: 100%;
   padding-left: 14px;
@@ -492,13 +492,12 @@ span {
   .contact ul li {
     display: inline;
     padding: 1rem; }
+  .contact ul a:link, .contact ul a:visited {
+    color: white; }
+  .contact ul a:hover {
+    color: #b64036; }
   .contact ul span {
     display: none; }
-  .contact ul a.contactlis:link,
-  .contact ul a.contactli:visited {
-    color: white; }
-  .contact ul a.contactli:hover {
-    color: #b64036; }
 
 @media screen and (min-width: 480px) {
   .contact-container {

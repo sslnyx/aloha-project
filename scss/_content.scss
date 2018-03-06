@@ -177,7 +177,8 @@ form {
 }
 
 input {
-  text-transform: capitalize;
+  // text-transform: capitalize;
+  position: relative;
   height: 40px;
   width: 100%;
   padding-left: 14px;
@@ -252,9 +253,6 @@ button:hover {
       grid-row: 2;
     }
   }
-
-
-
 }
 
 @media screen and (min-width: 600px) {
