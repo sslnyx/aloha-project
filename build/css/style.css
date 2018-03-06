@@ -123,11 +123,15 @@ nav img {
   border-top-width: 1px;
   border-top-style: solid; }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: #e2574c;
   text-decoration: none; }
 
-a:hover, a:active {
+a:focus {
+  outline: thin dotted; }
+
+a:hover {
   color: #b64036; }
 
 #navigation > .logo {

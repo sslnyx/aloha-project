@@ -37,12 +37,16 @@ nav img {
   border-top-style: solid;
 }
 
-a:link, a:visited {
+a:link, 
+a:visited {
   color: #e2574c;
   text-decoration: none;
 }
+a:focus {
+  outline: thin dotted;
+}
 
-a:hover, a:active {
+a:hover{
   color: #b64036;
 }
 

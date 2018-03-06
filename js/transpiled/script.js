@@ -37,11 +37,6 @@ $('a[href*="#"]')
   }
 });
 
-$('a:link').on('click', function () {
-  $(this).css('border', '1px dotted');
-  $(this).parent().siblings().find('a').css('border', '0px dotted');
-});
-
 $('form').on('submit', function (e) {
   //check if empty input
   if ($('#email').val() == '') {
